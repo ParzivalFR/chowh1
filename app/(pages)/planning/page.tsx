@@ -1,7 +1,7 @@
-import Title from "@/app/components/Title";
-import Image from "next/image";
-import planning from "@/app/images/planning.webp";
 import Spacing from "@/app/components/Spacing";
+import Title from "@/app/components/Title";
+import planning from "@/app/images/planning.webp";
+import Image from "next/image";
 
 const Planning = () => {
   return (
