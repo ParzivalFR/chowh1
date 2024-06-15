@@ -5,7 +5,7 @@ export default function Footer() {
   const currentYear: number = new Date().getFullYear();
 
   return (
-    <footer className="w-full m-auto flex flex-col gap-4 p-4 bg-black">
+    <footer className="footer-border w-full m-auto flex flex-col gap-4 p-4 bg-zinc-900/60">
       <div className="flex flex-col justify-center items-center gap-2">
         <YoutubeSocial />
         <Social />

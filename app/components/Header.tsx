@@ -99,7 +99,7 @@ function Navigation() {
             }}
           >
             <DropdownItem>
-              <Link href="#classes">Classes MWIII</Link>
+              <Link href="/classes">Classes MWIII</Link>
             </DropdownItem>
             <DropdownItem>
               <Link href="#streaming">Bindings</Link>

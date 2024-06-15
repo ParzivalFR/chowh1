@@ -20,7 +20,10 @@
     overflow-x: hidden;
     width: 100%;
     min-height: 100svh;
-    background-color: var(--background);
+    background-color: hsl(245, 100%, 7%);
+    background-image: url("/images/grainy.svg");
+    background-blend-mode: overlay;
+    background-size: cover;
     /* w-svw h-svh bg-background */
   }
 
@@ -31,5 +34,22 @@
     height: 100%;
     width: 100%;
     margin: auto;
+  }
+}
+
+@layer components {
+  .footer-border {
+    position: relative;
+  }
+
+  .footer-border::before {
+    @apply absolute top-0 left-0 right-0 h-px; /* Ajuste la hauteur de la bordure */
+    content: "";
+    background: linear-gradient(
+      to right,
+      hsl(245, 100%, 7%),
+      rgba(255, 255, 255, 1),
+      hsl(245, 100%, 7%)
+    );
   }
 }

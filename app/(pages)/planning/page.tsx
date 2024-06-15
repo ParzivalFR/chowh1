@@ -5,7 +5,9 @@ import Image from "next/image";
 
 const Planning = () => {
   return (
-    <section className="w-full h-auto m-auto px-4">
+    <>
+      {/* <section className="w-full h-auto m-auto px-4"> */}
+      <Spacing size={20} />
       <Title content={"Planning"} />
       <Spacing size={50} />
       <div className="flex justify-center items-center">
@@ -18,7 +20,9 @@ const Planning = () => {
         />
       </div>
       <Spacing size={100} />
-    </section>
+
+      {/* </section> */}
+    </>
   );
 };
 

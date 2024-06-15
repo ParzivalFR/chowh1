@@ -12,6 +12,7 @@ export default function Home() {
       <EmbedTwitch />
       <Spacing size={50} />
       <YoutubeVideos />
+      <Spacing size={100} />
     </main>
   );
 }
