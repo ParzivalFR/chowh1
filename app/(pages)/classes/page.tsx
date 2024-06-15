@@ -9,6 +9,7 @@ const Classes = () => {
       <Title content="Classes MWIII" />
       <Spacing size={50} />
       <ClassesCards />
+      <Spacing size={50} />
     </main>
   );
 };
