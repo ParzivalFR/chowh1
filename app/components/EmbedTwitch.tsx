@@ -12,7 +12,7 @@ const EmbedTwitch = () => {
         src="https://www.twitch.tv/embed/chowh1/chat?parent=chowh1.vercel.app&darkpopout"
         height="300"
         width="150"
-        className="w-2/6 md:w-1/3 md:h-96 xl:h-[500px] max-w-1/3"
+        className="hidden sm:block w-2/6 md:w-1/3 md:h-96 xl:h-[500px] max-w-1/3"
       ></iframe>
     </section>
   );

@@ -168,73 +168,43 @@ export function MenuDropdown() {
           </Button>
         </DropdownTrigger>
         <DropdownMenu aria-label="Static Actions">
-          <DropdownItem key="accueil" onClick={() => router.push("/")}>
+          <DropdownItem key="accueil" href="/">
             Accueil
           </DropdownItem>
-          <DropdownItem key="planning" onClick={() => router.push("/planning")}>
+          <DropdownItem key="planning" href="/planning">
             Planning
           </DropdownItem>
-          <DropdownItem
-            key="pc-gaming"
-            onClick={() => router.push("/pc-gaming")}
-          >
+          <DropdownItem key="pc-gaming" href="/pc-gaming">
             PC Gaming
           </DropdownItem>
-          <DropdownItem
-            key="pc-streaming"
-            onClick={() => router.push("/pc-streaming")}
-          >
+          <DropdownItem key="pc-streaming" href="/pc-streaming">
             PC Streaming
           </DropdownItem>
-          <DropdownItem
-            key="peripheriques"
-            onClick={() => router.push("/peripheriques")}
-          >
+          <DropdownItem key="peripheriques" href="/peripheriques">
             Périphériques
           </DropdownItem>
-          <DropdownItem
-            key="classes-mw3"
-            onClick={() => router.push("/loadout")}
-          >
+          <DropdownItem key="classes-mw3" href="/loadout">
             Classes MWIII
           </DropdownItem>
-          <DropdownItem key="bindings" onClick={() => router.push("/bindings")}>
+          <DropdownItem key="bindings" href="/bindings">
             Bindings
           </DropdownItem>
-          <DropdownItem
-            key="params-warzone"
-            onClick={() => router.push("/settings-wz")}
-          >
+          <DropdownItem key="params-warzone" href="/settings-wz">
             Paramètres Warzone
           </DropdownItem>
-          <DropdownItem
-            key="params-mw2"
-            onClick={() => router.push("/settings-mw2")}
-          >
+          <DropdownItem key="params-mw2" href="/settings-mw2">
             Paramètres MWII
           </DropdownItem>
-          <DropdownItem
-            key="config-short"
-            onClick={() => router.push("/small-config")}
-          >
+          <DropdownItem key="config-short" href="/small-config">
             Congiguration PC ~ 1000€
           </DropdownItem>
-          <DropdownItem
-            key="config-base"
-            onClick={() => router.push("/average-config")}
-          >
+          <DropdownItem key="config-base" href="/average-config">
             Configuration PC ~ 1500€
           </DropdownItem>
-          <DropdownItem
-            key="config-qualities"
-            onClick={() => router.push("/quality-price-config")}
-          >
+          <DropdownItem key="config-qualities" href="/quality-price-config">
             Confuguration PC Qualité/Prix
           </DropdownItem>
-          <DropdownItem
-            key="config-extreme"
-            onClick={() => router.push("/wtf-config")}
-          >
+          <DropdownItem key="config-extreme" href="/wtf-config">
             Configuration PC W.T.F
           </DropdownItem>
         </DropdownMenu>
