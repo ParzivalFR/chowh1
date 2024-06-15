@@ -21,7 +21,7 @@ export default function Header() {
         alt="ChowH1"
         width={1931}
         height={343}
-        className="w-full"
+        className="w-full min-h-[200px] object-cover"
       />
       <Navigation />
     </header>

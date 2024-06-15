@@ -1,4 +1,4 @@
-import { socials, youtubeSocials } from "@/data/Socials";
+import { socials, youtubeSocials } from "@/app/data/Socials";
 import Link from "next/link";
 
 export default function Footer() {
