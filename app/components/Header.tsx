@@ -9,9 +9,12 @@ import {
   DropdownTrigger,
 } from "@nextui-org/dropdown";
 import { Navbar, NavbarContent, NavbarItem } from "@nextui-org/navbar";
+import { Avatar } from "@nextui-org/react";
 import { ChevronDownIcon } from "@radix-ui/react-icons";
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
+import { RiMenu3Fill } from "react-icons/ri";
 
 export default function Header() {
   return (
@@ -148,6 +151,94 @@ function Navigation() {
           </DropdownMenu>
         </Dropdown>
       </NavbarContent>
+      <MenuDropdown />
     </Navbar>
+  );
+}
+
+export function MenuDropdown() {
+  const router = useRouter();
+  return (
+    <nav className="w-full flex justify-between sm:hidden">
+      <Avatar src="/favicon.png" alt="ChowH1" size="md" />
+      <Dropdown>
+        <DropdownTrigger>
+          <Button className="bg-zinc-200 text-background text-2xl transition hover:scale-[0.98] duration-500 ease-in-out">
+            <RiMenu3Fill />
+          </Button>
+        </DropdownTrigger>
+        <DropdownMenu aria-label="Static Actions">
+          <DropdownItem key="accueil" onClick={() => router.push("/")}>
+            Accueil
+          </DropdownItem>
+          <DropdownItem key="planning" onClick={() => router.push("/planning")}>
+            Planning
+          </DropdownItem>
+          <DropdownItem
+            key="pc-gaming"
+            onClick={() => router.push("/pc-gaming")}
+          >
+            PC Gaming
+          </DropdownItem>
+          <DropdownItem
+            key="pc-streaming"
+            onClick={() => router.push("/pc-streaming")}
+          >
+            PC Streaming
+          </DropdownItem>
+          <DropdownItem
+            key="peripheriques"
+            onClick={() => router.push("/peripheriques")}
+          >
+            Périphériques
+          </DropdownItem>
+          <DropdownItem
+            key="classes-mw3"
+            onClick={() => router.push("/loadout")}
+          >
+            Classes MWIII
+          </DropdownItem>
+          <DropdownItem key="bindings" onClick={() => router.push("/bindings")}>
+            Bindings
+          </DropdownItem>
+          <DropdownItem
+            key="params-warzone"
+            onClick={() => router.push("/settings-wz")}
+          >
+            Paramètres Warzone
+          </DropdownItem>
+          <DropdownItem
+            key="params-mw2"
+            onClick={() => router.push("/settings-mw2")}
+          >
+            Paramètres MWII
+          </DropdownItem>
+          <DropdownItem
+            key="config-short"
+            onClick={() => router.push("/small-config")}
+          >
+            Congiguration PC ~ 1000€
+          </DropdownItem>
+          <DropdownItem
+            key="config-base"
+            onClick={() => router.push("/average-config")}
+          >
+            Configuration PC ~ 1500€
+          </DropdownItem>
+          <DropdownItem
+            key="config-qualities"
+            onClick={() => router.push("/quality-price-config")}
+          >
+            Confuguration PC Qualité/Prix
+          </DropdownItem>
+          <DropdownItem
+            key="config-extreme"
+            onClick={() => router.push("/wtf-config")}
+          >
+            Configuration PC W.T.F
+          </DropdownItem>
+        </DropdownMenu>
+      </Dropdown>
+    </nav>
   );
 }
