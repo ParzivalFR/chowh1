@@ -55,11 +55,7 @@ const ClassesCards = () => {
           />
           <div className="relative flex items-center justify-center px-4 py-2 ">
             <h3 className="text-xl font-bold text-zinc-100">{weapon.name}</h3>
-            <button
-              onClick={() =>
-                downloadImage(weapon.img.src, weapon.name + ".png")
-              }
-            >
+            <button onClick={() => downloadImage(weapon.img.src, weapon.name)}>
               <IoMdDownload className="absolute top-[30%] right-4 text-xl text-zinc-200 transition hover:scale-[1.1] duration-500 ease-in-out" />
             </button>
           </div>
