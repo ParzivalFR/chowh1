@@ -108,10 +108,10 @@ function Navigation() {
               <Link href="#streaming">Bindings</Link>
             </DropdownItem>
             <DropdownItem>
-              <Link href="#paramsWarzone">Paramètres Warzone</Link>
+              <Link href="/settings/warzone">Paramètres Warzone</Link>
             </DropdownItem>
             <DropdownItem>
-              <Link href="#paramsMW2">Paramètres MWII</Link>
+              <Link href="/settings/mw2">Paramètres MWII</Link>
             </DropdownItem>
           </DropdownMenu>
         </Dropdown>
@@ -161,7 +161,7 @@ export function MenuDropdown() {
   return (
     <nav className="w-full flex justify-between sm:hidden">
       <Avatar src="/favicon.png" alt="ChowH1" size="md" />
-      <Dropdown>
+      <Dropdown className="bg-zinc-300">
         <DropdownTrigger>
           <Button className="bg-zinc-200 text-background text-2xl transition hover:scale-[0.98] duration-500 ease-in-out">
             <RiMenu3Fill />
@@ -189,10 +189,10 @@ export function MenuDropdown() {
           <DropdownItem key="bindings" href="/bindings">
             Bindings
           </DropdownItem>
-          <DropdownItem key="params-warzone" href="/settings-wz">
+          <DropdownItem key="params-warzone" href="/settings/warzone">
             Paramètres Warzone
           </DropdownItem>
-          <DropdownItem key="params-mw2" href="/settings-mw2">
+          <DropdownItem key="params-mw2" href="/settings/mw2">
             Paramètres MWII
           </DropdownItem>
           <DropdownItem key="config-short" href="/small-config">
